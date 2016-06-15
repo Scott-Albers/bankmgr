@@ -1,5 +1,5 @@
 const expect = require('chai').expect;
-//require('../lib/account');
+const Account = require('../lib/account');
 
 describe('Account', function(){
 
