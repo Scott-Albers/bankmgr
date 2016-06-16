@@ -1,11 +1,11 @@
 /* eslint-disable no-unused-expressions */
-/* eslint-disable prefer-arrow-callback */
+
 const expect = require('chai').expect;
 const Account = require('../lib/account');
 
-describe('Account', function testAccount() {
-  describe('constructor', function testConstructor() {
-    it('a new account should return name, balance, and create number', function testCase1() {
+describe('Account', () => {
+  describe('constructor', () => {
+    it('a new account should return name, balance, and create number', () => {
       const account1 = new Account('Bob', 3.0);
       expect(account1).to.be.instanceof(Account);
       expect(account1.number).to.be.length(36);
